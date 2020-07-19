@@ -20,7 +20,7 @@ export default function Card(props) {
             onClick={handleCardClick}
         >
             <div className="px-6 py-4 flex items-start">
-                <div>
+                <div style={{ maxWidth: '300px' }}>
                     <div className="font-bold text-xl mb-2">{props.name}</div>
                     <p className="text-gray-700 text-base">{props.detail}</p>
                 </div>
