@@ -2,7 +2,7 @@
 
 <p style="text-align: center;">
   <p align="center">
-      <img src="./src/assets/coding-diary-logo-2.png" height="200" width="200" style="margin: 0 auto"/>
+      <img src="./src/assets/icons/512x512.png" height="200" width="200" style="margin: 0 auto"/>
     <br />
     <a href="https://codingdiary.ml">View Demo</a>
     ·
