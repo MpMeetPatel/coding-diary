@@ -1,0 +1,217 @@
+@import url('./styles/tailwind.out.css');
+@import url('../node_modules/codemirror/lib/codemirror.css');
+@import url('../node_modules/codemirror/theme/material.css');
+@import url('./fonts/firacode.css');
+@import url('./fonts/nunito.css');
+
+* {
+    outline: none;
+}
+
+body {
+    // background: red;
+    background: rgb(102, 126, 234) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+
+    font-family: 'Nunito', system-ui;
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 12px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #babac0;
+        border-radius: 16px;
+        // border: 4px solid #fff;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    .hide-scollbar {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .custom-scrollbar {
+        &::-webkit-scrollbar {
+            background-color: #babac0;
+            width: 12px;
+            height: 12px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #babac0;
+            border-radius: 16px;
+            border: 4px solid #fff;
+        }
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+    }
+
+    .react-codemirror2 {
+        .CodeMirror {
+            font-family: 'Fira Code';
+            border-radius: 5px;
+            height: unset;
+            // height: 100px;
+            // max-height: 500px;
+            // max-height: 500px;
+
+            .CodeMirror-vscrollbar {
+                &::-webkit-scrollbar {
+                    background-color: #babac0;
+                    width: 6px;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: #263238;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #babac0;
+                    border-radius: 16px;
+                }
+                &::-webkit-scrollbar-button {
+                    display: none;
+                }
+            }
+            .CodeMirror-hscrollbar {
+                &::-webkit-scrollbar {
+                    background-color: #babac0;
+                    width: 12px;
+                    height: 6px;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: #263238;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #babac0;
+                    border-radius: 16px;
+                }
+                &::-webkit-scrollbar-button {
+                    display: none;
+                }
+            }
+            .CodeMirror-scroll {
+                min-height: 100px;
+                max-height: 300px;
+            }
+        }
+    }
+
+    .react-select {
+        outline: none;
+        border: none;
+        z-index: 50;
+        &__control {
+            min-height: 45px;
+            border-color: #edf2f7;
+            background-color: #edf2f7;
+            box-shadow: none;
+            &-is-focused {
+                border-color: #edf2f7;
+            }
+            &:hover {
+                border-color: #edf2f7;
+            }
+        }
+        &__value-container {
+        }
+        &__indicators {
+        }
+        &__menu {
+            z-index: 51;
+        }
+        &__indicator-separator {
+            display: none;
+        }
+    }
+}
+// ::-webkit-scrollbar {
+//     display: none; /* Safari and Chrome */
+// }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+main {
+    width: fit-content;
+    padding-left: 2rem;
+
+    .btn-fixed {
+        position: fixed;
+        bottom: 12%;
+        left: 90%;
+        z-index: 5555;
+    }
+    .search-btn-fixed {
+        position: fixed;
+        bottom: 6%;
+        left: 90%;
+        z-index: 5555;
+    }
+}
+
+.kanban {
+    min-height: calc(100vh - 110px);
+    max-height: calc(100vh - 110px);
+    min-width: 380px;
+    // overflow: hidden;
+    overflow-y: scroll;
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background-color: #babac0;
+            // border-radius: 16px;
+            // border: 4px solid #fff;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        // background-color: #fff;
+        border-radius: 16px;
+        // border: 4px solid #fff;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+
+    & > .col {
+        padding: 0 1rem;
+    }
+
+    &.match-height > .col {
+        display: flex;
+    }
+
+    &.no-gutter {
+        margin: 0;
+
+        & > .col {
+            padding: 0;
+        }
+    }
+}

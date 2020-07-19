@@ -1,0 +1,7 @@
+.modal {
+    transition: opacity 0.25s ease;
+}
+div.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}
