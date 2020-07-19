@@ -112,7 +112,7 @@ body {
     .react-select {
         outline: none;
         border: none;
-        z-index: 50;
+        
         &__control {
             min-height: 45px;
             border-color: #edf2f7;
@@ -130,7 +130,7 @@ body {
         &__indicators {
         }
         &__menu {
-            z-index: 51;
+            z-index: -1;
         }
         &__indicator-separator {
             display: none;
