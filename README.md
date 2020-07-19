@@ -1,5 +1,6 @@
+<h4 align="center"> 👓 Keep your code private and saved  </h4>
+
 <p style="text-align: center;">
-<h3 style="text-align: center;"> 👓 Keep Code Private & Saved  👓 </h3>
   <p align="center">
       <img src="./src/assets/coding-diary-logo-2.png" height="200" width="200" style="margin: 0 auto"/>
     <br />
