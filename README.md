@@ -1,9 +1,8 @@
 <h3 style="text-align: center;"> 👓 Keep Code Private & Saved  👓 </h3>
 
 <p style="text-align: center;">
-    <img src="./src/assets/coding-diary-logo-2.png" height="200" width="200" style="margin: 0 auto"/>
-
   <p align="center">
+      <img src="./src/assets/coding-diary-logo-2.png" height="200" width="200" style="margin: 0 auto"/>
     <br />
     <a href="https://codingdiary.ml">View Demo</a>
     ·
