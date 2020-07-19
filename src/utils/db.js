@@ -1,6 +1,6 @@
 import { openDB } from 'idb';
 
-const DB_NAME = 'REACT_TEST';
+const DB_NAME = 'CODING_DB';
 const VERSION = 1;
 
 function createDB(collection, indexes) {

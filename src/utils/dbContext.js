@@ -45,7 +45,7 @@ export const DBContextProvider = (props) => {
         ]).then(async (db) => {
             // Create Search Database
 
-            const searchDatabase = await searchDB('searchDb');
+            const searchDatabase = await searchDB('SEARCH_DB');
             // Add to db (single item)
             let methods = {};
             if (db) {
