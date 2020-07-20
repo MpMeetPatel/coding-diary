@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@fullhuman/postcss-purgecss": "^2.3.0",
         "@hookform/error-message": "^0.0.3",
         "autoprefixer": "^9.8.2",
         "codemirror": "^5.55.0",
