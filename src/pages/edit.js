@@ -223,7 +223,7 @@ export default function Edit(props) {
                                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                                     htmlFor="parent"
                                 >
-                                    Parent
+                                    Parent (for future)
                                 </label>
                                 <input
                                     disabled={true}

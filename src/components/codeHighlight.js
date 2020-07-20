@@ -145,7 +145,7 @@ function CodeHighlight({ setSnippetsData, toggleModal, codeSnippets }) {
                         type="button"
                         className="bg-white hover:bg-indigo-500 hover:text-white text-indigo font-bold py-2 px-5 rounded w-full"
                     >
-                        Cancel
+                        Save & Exit
                     </button>
                 </span>
             </div>
