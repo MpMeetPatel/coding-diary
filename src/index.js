@@ -1,16 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import MainPage from './pages';
 import 'react-toastify/dist/ReactToastify.css';
+import './styles/tailwind.out.css'
 import './index.scss';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { DBContextProvider } from './utils/dbContext';
 import { CardsContextProvider } from './utils/cardsContext';
+// import CssProvider from './CssProvider';
 
 ReactDOM.render(
     <DBContextProvider>
         <CardsContextProvider>
-            <App />
+            {/* <CssProvider> */}
+                <Router>
+                    <MainPage />
+                </Router>
+            {/* </CssProvider> */}
         </CardsContextProvider>
     </DBContextProvider>,
     document.getElementById('root')
