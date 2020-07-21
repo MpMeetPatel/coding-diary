@@ -8,6 +8,7 @@ import CodeSnippetModal from '../components/codeSnippetModal';
 import { DBContext } from '../utils/dbContext';
 import { CardsContext } from '../utils/cardsContext';
 import { codeIconBase64 } from '../utils/iconBase64';
+import { toast } from 'react-toastify';
 
 export default function Edit(props) {
     const {
@@ -142,6 +143,7 @@ export default function Edit(props) {
     }
 
     function setSnippetsData(data) {
+        toast("Don't forget to click on update to save snippets data", { duration: 3000 });
         setCodeSnippets(data);
     }
 
