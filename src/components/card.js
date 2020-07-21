@@ -24,15 +24,17 @@ export default function Card(props) {
                     <div className="font-bold text-xl mb-2">{props.name}</div>
                     <p className="text-gray-700 text-base">{props.detail}</p>
                 </div>
-                <div className="cursor-pointer outline-none ml-auto mt-2 bg-gray-100 hover:bg-gray-200 rounded-full p-2">
+                <div
+                    className="cursor-pointer outline-none ml-auto mt-2 bg-gray-100 hover:bg-gray-200 rounded-full p-2"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        deleteConfirm();
+                    }}
+                >
                     <img
                         src={deleteGrayIconBase64}
                         alt="delete-icon"
                         className="h-4"
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            deleteConfirm();
-                        }}
                     />
                 </div>
             </div>
