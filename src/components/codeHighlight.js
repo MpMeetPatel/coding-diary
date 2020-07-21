@@ -45,9 +45,17 @@ function CodeHighlight({ setSnippetsData, toggleModal, codeSnippets }) {
         // SEND DATA ON UNMOUNT
         return () => {
             setSnippetsData(snippets);
-            toast("Don't forget to click on add/update to save snippets data", { duration: 3000 });
         };
     }, [setSnippetsData, snippets]);
+
+    useEffect(() => {
+        return () => {
+            toast("Don't forget to click on add/update to save snippets data", {
+                duration: 3000,
+            });
+        };
+    }, []);
+    
     return (
         <div className="py-8 px-4">
             {snippets.map((snippet) => (
