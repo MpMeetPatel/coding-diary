@@ -9,6 +9,7 @@ import { DBContext } from '../utils/dbContext';
 import uuidV4 from 'uuid/dist/v4';
 import { CardsContext } from '../utils/cardsContext';
 import { codeIconBase64 } from '../utils/iconBase64';
+import { toast } from 'react-toastify';
 
 export default function Add(props) {
     const { register, errors, handleSubmit, setError, clearErrors } = useForm();
@@ -144,6 +145,7 @@ export default function Add(props) {
     }
 
     function setSnippetsData(data) {
+        toast("Don't forget to click on add to save snippets data", { duration: 3000 });
         setCodeSnippets(data);
     }
 
