@@ -387,6 +387,7 @@ export default function Add(props) {
                             {snippetModalOpen && (
                                 <CodeSnippetModal isOpen={snippetModalOpen}>
                                     <CodeHighlight
+                                        codeSnippets={codeSnippets}
                                         setSnippetsData={setSnippetsData}
                                         toggleModal={toggleSnippetModal}
                                     />
