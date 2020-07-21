@@ -54,26 +54,25 @@ function GlobalSearch() {
 
     return (
         <>
-            <div
+            <img
+                src={cancleIconBase64}
+                alt="cancle-icon"
+                className={`bg-white px-3 py-1 rounded outline-none h-10 cursor-pointer`}
+                onClick={() => history.replace('/')}
                 style={{
+                    margin: 'auto',
                     position: 'fixed',
-                    top: '6%',
-                    left: '90%',
+                    top: '0%',
+                    left: '70%',
                     zIndex: '5555',
                 }}
-            >
-                <img
-                    src={cancleIconBase64}
-                    alt="cancle-icon"
-                    className={`cancle-btn-fixed bg-white px-3 py-1 rounded outline-none h-10 cursor-pointer`}
-                    onClick={() => history.replace('/')}
-                />
-            </div>
+            />
             <div
                 style={{
                     minWidth: '600px',
                     maxWidth: '800px',
-                    marginTop: '-15rem',
+                    margin: 'auto',
+                    zIndex: 11,
                 }}
             >
                 {/* TODO -> make focus color border or somrthing */}

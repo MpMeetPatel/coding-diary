@@ -58,7 +58,7 @@ function ConfirmationModal(props) {
             }}
         >
             <div
-                className={`fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0 sm:flex sm:items-center sm:justify-center`}
+                className={`fixed bottom-0 inset-x-0 px-4 pb-4 inset-0 flex items-center justify-center`}
             >
                 <div className="fixed inset-0">
                     <div className="absolute inset-0 bg-opacity-75 bg-black"></div>
@@ -94,10 +94,6 @@ function ConfirmationModal(props) {
                                 </button>
                             </div>
                         </div>
-                        {/* <div className="bg-gray-50 sm:flex sm:flex-row-reverse mt-5">
-                            <span className="w-full shadow-sm sm:ml-3 sm:w-auto"></span>
-                            <span className="mt-3 w-full shadow-sm sm:mt-0 sm:w-auto"></span>
-                        </div> */}
                     </div>
                 </div>
             </div>
