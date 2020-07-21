@@ -1,7 +1,12 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-undef */
 
-self.skipWaiting()
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        console.log('SKIP_WAITING');
+        self.skipWaiting();
+    }
+});
 
 workbox.routing.registerRoute(
     new RegExp('https:.*min.(css|js)'),
@@ -9,7 +14,6 @@ workbox.routing.registerRoute(
         cacheName: 'cdn-cache',
     })
 );
-
 
 // Below code is only for example
 
@@ -38,4 +42,4 @@ workbox.routing.registerRoute(
 //     }
 // });
 
-workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
+workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
