@@ -5,6 +5,7 @@ import { programmingLanguages } from '../utils/langsModes';
 import { deleteIconBase64 } from '../utils/iconBase64';
 import '../utils/codeMirrorLangs';
 import uuidV1 from 'uuid/dist/v1';
+import { toast } from 'react-toastify';
 
 function CodeHighlight({ setSnippetsData, toggleModal, codeSnippets }) {
     const [snippets, setSnippets] = useState(
@@ -44,6 +45,7 @@ function CodeHighlight({ setSnippetsData, toggleModal, codeSnippets }) {
         // SEND DATA ON UNMOUNT
         return () => {
             setSnippetsData(snippets);
+            toast("Don't forget to click on add/update to save snippets data", { duration: 3000 });
         };
     }, [setSnippetsData, snippets]);
     return (

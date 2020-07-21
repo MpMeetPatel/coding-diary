@@ -68,3 +68,11 @@
 | ----------------- | :------ |
 | PDF/Image support | ✔️      |
 | Mobile support    | ✔️      |
+
+<br />
+
+<h5 align="left"> 🐱‍🏍 Creator / Maintainer </h5>
+- <a href="https://meetmywords.ml" target="_blank">Meet Patel</a>
+
+<h5 align="left"> 🐱‍🏍 Designer </h5>
+- <a href="https://mitdasondi.ml" target="_blank">Mit Dasondi</a>
