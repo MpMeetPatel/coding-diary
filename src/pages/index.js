@@ -100,9 +100,9 @@ class MainPage extends Component {
                 </div>
 
                 {this.context.isQueryDone && this.context.cards.length === 0 && (
-                    <div className="fixed bottom-0 inset-x-0 px-2 pb-4 sm:inset-0 sm:flex sm:items-center sm:justify-center">
+                    <div className="fixed bottom-0 inset-x-0 px-2 pb-4 inset-0 flex items-center justify-center">
                         <span
-                            className="bg-white py-8 rounded shadow-xl w-4/6 lg:text-4xl sm:text-2xl text-center"
+                            className="bg-white py-8 rounded shadow-xl w-4/6 text-center lg:text-4xl"
                             role="img"
                             aria-hidden="true"
                         >

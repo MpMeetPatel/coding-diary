@@ -58,7 +58,7 @@ function ConfirmationModal(props) {
             }}
         >
             <div
-                className={`fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0 sm:flex sm:items-center sm:justify-center`}
+                className={`fixed bottom-0 inset-x-0 px-4 pb-4 inset-0 flex items-center justify-center`}
             >
                 <div className="fixed inset-0">
                     <div className="absolute inset-0 bg-opacity-75 bg-black"></div>
@@ -74,30 +74,7 @@ function ConfirmationModal(props) {
                         <div className="text-left text-lg text-black font-bold mt-1">
                             Are you sure you want to delete ?
                         </div>
-                        <div className="flex align-middle ml-auto">
-                            <div className="mr-2">
-                                <button
-                                    onClick={() => handleCardDelete(params.id)}
-                                    type="submit"
-                                    className="bg-red-500 text-white font-bold py-2 px-4 text-sm rounded w-full shadow"
-                                >
-                                    DELETE
-                                </button>
-                            </div>
-                            <div>
-                                <button
-                                    onClick={() => history.replace('/')}
-                                    type="button"
-                                    className="bg-white hover:bg-indigo-500  hover:text-white text-indigo font-bold py-2 px-4 text-sm rounded w-full shadow"
-                                >
-                                    CLOSE
-                                </button>
-                            </div>
-                        </div>
-                        {/* <div className="bg-gray-50 sm:flex sm:flex-row-reverse mt-5">
-                            <span className="w-full shadow-sm sm:ml-3 sm:w-auto"></span>
-                            <span className="mt-3 w-full shadow-sm sm:mt-0 sm:w-auto"></span>
-                        </div> */}
+                        <div className="flex align-middle ml-auto"></div>
                     </div>
                 </div>
             </div>
