@@ -74,7 +74,26 @@ function ConfirmationModal(props) {
                         <div className="text-left text-lg text-black font-bold mt-1">
                             Are you sure you want to delete ?
                         </div>
-                        <div className="flex align-middle ml-auto"></div>
+                        <div className="flex align-middle ml-auto">
+                            <div className="mr-2">
+                                <button
+                                    onClick={() => handleCardDelete(params.id)}
+                                    type="submit"
+                                    className="bg-red-500 text-white font-bold py-2 px-4 text-sm rounded w-full shadow"
+                                >
+                                    DELETE
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    onClick={() => history.replace('/')}
+                                    type="button"
+                                    className="bg-white hover:bg-indigo-500  hover:text-white text-indigo font-bold py-2 px-4 text-sm rounded w-full shadow"
+                                >
+                                    CLOSE
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
