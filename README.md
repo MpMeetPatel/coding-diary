@@ -12,11 +12,11 @@
   </p>
 <br />
 <ul>
-    <li style="text-align: left;">Desktop first webapp</li>
-    <li style="text-align: left;">Works offline without internet</li>
-    <li style="text-align: left;">Can be utilized for 1000+ cards easily</li>
-    <li style="text-align: left;">Faster search through in browser fulltext search</li>
-    <li style="text-align: left;">A personal coding diary that keeps your data to yourself only</li>
+    <li style="text-align: left;">Desktop first webapp.</li>
+    <li style="text-align: left;">Works offline without internet.</li>
+    <li style="text-align: left;">Can be utilized for 1000+ cards easily.</li>
+    <li style="text-align: left;">Faster search through in browser fulltext search.</li>
+    <li style="text-align: left;">A personal coding diary that keeps your data to yourself only.</li>
 </ul>
 
 </p>
