@@ -1,12 +1,14 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-undef */
 
+
 self.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
-        console.log('SKIP_WAITING');
+        console.log('--- SKIP_WAITING ---');
         self.skipWaiting();
     }
 });
+
 
 workbox.routing.registerRoute(
     new RegExp('https:.*min.(css|js)'),
