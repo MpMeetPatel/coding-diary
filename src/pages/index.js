@@ -106,8 +106,8 @@ class MainPage extends Component {
                             role="img"
                             aria-hidden="true"
                         >
-                            🐱‍🏍{` `}Don't be Lazy person, start creating your
-                            coding-diary{` `} 🐱‍🏍
+                            🐱‍Don't be Lazy person, start creating your
+                            coding-diary{` `} 🐱‍
                         </span>
                     </div>
                 )}
