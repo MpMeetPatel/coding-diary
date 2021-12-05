@@ -4,7 +4,7 @@
   <p align="center">
       <img src="./src/assets/icons/512x512.png" height="200" width="200" style="margin: 0 auto"/>
     <br />
-    <a href="https://codingdiary.ml">View Demo</a>
+    <a href="#">View Demo</a>
     ·
     <a href="https://github.com/MpMeetPatel/coding-diary/issues">Report Bug</a>
     ·
